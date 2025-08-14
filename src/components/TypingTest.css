@@ -1,0 +1,103 @@
+/* Typing Test Specific Styles */
+
+.character {
+  position: relative;
+  transition: all 0.1s ease;
+}
+
+.character.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: hsl(var(--primary));
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Smooth transitions for stats */
+.stats-transition {
+  transition: all 0.3s ease;
+}
+
+/* Focus styles for better accessibility */
+.typing-area:focus-within {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar for text area */
+.text-display::-webkit-scrollbar {
+  width: 6px;
+}
+
+.text-display::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 3px;
+}
+
+.text-display::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground));
+  border-radius: 3px;
+}
+
+.text-display::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+  .character {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .character {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* Animation for completion */
+.test-complete {
+  animation: celebration 0.6s ease-out;
+}
+
+@keyframes celebration {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Pulse animation for current character */
+.pulse-current {
+  animation: pulse-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-glow {
+  from {
+    background-color: rgba(59, 130, 246, 0.3);
+  }
+  to {
+    background-color: rgba(59, 130, 246, 0.6);
+  }
+}
+
