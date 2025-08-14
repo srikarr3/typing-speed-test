@@ -1,12 +1,12 @@
 # TypeVelocity - Typing Speed Test App
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Site-brightgreen)](https://typevelocity.netlify.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Site-brightgreen)](https://typing-speed-test-one-delta.vercel.app/)
 
 A modern, responsive typing speed test application built with React and Tailwind CSS. Test and improve your typing speed with real-time statistics and beautiful visual feedback.
 
 ## 🚀 Live Demo
 
-Try the live demo here: [https://typevelocity.netlify.app](https://typevelocity.netlify.app)
+Try the live demo here: [TypeVelocity](https://typing-speed-test-one-delta.vercel.app/)
 
 ## Features
 
